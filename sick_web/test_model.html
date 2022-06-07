@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+Template Name: Yammoe
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>疾病網</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body onload="current_time()" id="top">
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- Top Background Image Wrapper -->
+    <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/coronavirus-2.jpg');"> 
+        <!-- ################################################################################################ -->
+        <div class="wrapper row0">
+          <div id="topbar" class="hoc clear"> 
+            <!-- ################################################################################################ -->
+            <span id="current"></span>
+            <!-- ################################################################################################ -->
+          </div>
+        </div>
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+      <div class="wrapper row1">
+        <header id="header" class="hoc clear">
+          <div id="logo" class="fl_left"> 
+            <!-- ################################################################################################ -->
+            <h1><a href="test_model.html">Tina & Tinky & Mr.Math</a></h1>
+            <!-- ################################################################################################ -->
+          </div>
+          <nav id="mainav" class="fl_right"> 
+            <!-- ################################################################################################ -->
+            <ul class="clear">
+              <li class="active"><a href="test_model.html">Home</a></li>
+              <li><a class="drop" href="#">模型介紹</a>
+                <ul>
+                  <li><a href="pages/LeastSquare.html">Least square</a></li>
+                  <li><a href="pages/SIRmodel.html">SIR model</a></li>
+                </ul>
+              </li>
+              <li><a class="drop" href="pages/littlegames.html">小遊戲</a></li>
+              <li><a class="drop" href="pages/manager_login.html">管理者登入</a></li>
+            </ul>
+            <!-- ################################################################################################ -->
+          </nav>
+        </header>
+      </div>
+      <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <p>目前總確診人數：570,870 人</p>
+      <h3 class="heading">Least square & SIR</h3>
+      <p></p>
+      <footer>
+        <ul class="nospace inline pushright"></ul>
+          <a class="btn inverse" href="pages/domodel.html">進入預測模型</a>
+        </ul>
+        <!-- <li><a class="btn" href="#">button1</a></li> -->
+        <!-- <li><a class="btn inverse" href="#">button2</a></li> -->
+      </footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+</body>
+</html>
+<script>
+  function current_time(){
+  　document.getElementById('current').innerHTML = new Date();
+  　setTimeout('current_time()',1000); //每秒呼叫一次功能: current_time()
+  }
+</script>

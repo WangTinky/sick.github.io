@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>疾病網</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body onload="current_time()" id="top">
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('../images/demo/backgrounds/coronavirus-2.jpg');"> 
+  <!--顯示時間-->
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear"> 
+      <span id="current"></span>
+    </div>
+  </div>
+  <!--最上面的文字-->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left"> 
+        <!-- ################################################################################################ -->
+        <h1><a href="../test_model.html">Tina & Tinky & Mr.Math</a></h1>
+        <!-- ################################################################################################ -->
+      </div>
+      <nav id="mainav" class="fl_right"> 
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+          <li><a href="../test_model.html">Home</a></li>
+          <li class="active"><a class="drop" href="#">模型介紹</a>
+            <ul>
+              <li class="active"><a href="LeastSquare.html">Least square</a></li>
+              <li><a href="SIRmodel.html">SIR model</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="littlegames.html">小遊戲</a></li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </nav>
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+      <h1>Least Square</h1>
+      <!--<img class="imgr borderedbox inspace-5" src="../images/demo/imgr.gif" alt="">-->
+      <p>最小平方法（英語：least squares method），又稱最小二乘法，是一種數學優化建模方法。它通過最小化誤差的平方和尋找數據的最佳函數匹配。</p>
+      <p>（取自 <a href="https://zh.wikipedia.org/zh-tw/%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95">維基百科-最小平方法</a>。）</p>
+      <table>
+        <tr>
+        <td><img src="../images/LS1.png" border=0></td>
+        <td><img src="../images/LS2.png" border=0></td>
+        </tr>
+      </table>
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
+<script>
+  function current_time(){
+  　document.getElementById('current').innerHTML = new Date();
+  　setTimeout('current_time()',1000); //每秒呼叫一次功能: current_time()
+  }
+</script>
